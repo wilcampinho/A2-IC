@@ -211,7 +211,7 @@ def main():
     x_election, y_election = load_x_and_y(data=election_data)
     model = load_ready_ai_model(x=x_election.values, y=y_election.values)
 
-    with open('./data/election_train_test_scaler.pkl', 'rb') as f:
+    with open('eleicoes.pkl', 'rb') as f:
         x_train, x_test, y_train, y_test, scaler = pickle.load(f)
 
     prediction = model.predict(x_test)
