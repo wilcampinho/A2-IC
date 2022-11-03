@@ -3,7 +3,7 @@
 
 # DETALHES
 # 3 Datasets: https://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais-1 > Prestação de contas eleitorais > 2020 > 3 Arquivos .zip
-# Aluno: Plínio Larrubia Ferreira de Moura
+# Aluno: Wilson Pessanha Campinho
 
 # pip install streamlit
 import matplotlib.pyplot as plt
@@ -22,10 +22,10 @@ from keras.models import Sequential
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
 
-ZIP_PATH = 'data/eleicao.zip'
-CSV_FILE1 = 'data/Plinio Larrubia Ferreira de Moura - consulta_cand_2020_RJ.csv'
-CSV_FILE2 = 'data/Plinio Larrubia Ferreira de Moura - receitas_candidatos_2020_RJ.csv'
-CSV_FILE3 = 'data/Plinio Larrubia Ferreira de Moura - despesas_contratadas_candidatos_2020_RJ.csv'
+ZIP_PATH = 'A2Eleicoes.zip'
+CSV_FILE1 = 'Wilson Pessanha Campinho - consulta_cand_2020_RJ.csv'
+CSV_FILE2 = 'Wilson Pessanha Campinho - receitas_candidatos_2020_RJ.csv'
+CSV_FILE3 = 'Wilson Pessanha Campinho - despesas_contratadas_candidatos_2020_RJ'
 CHECKPOINT_DIR = './training_checkpoints'
 
 
