@@ -2,9 +2,7 @@ altair
 pandas
 streamlit
 sklearn
-matplotlib
 os
 numpy
 tensorflow
 zipfile
-
