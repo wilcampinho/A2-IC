@@ -2,15 +2,9 @@ altair
 pandas
 streamlit
 sklearn
-sklearn.metrics
-sklearn.preprocessing
-sklearn.model_selection
-sklearn.lenar_model
-matplotlib.pyplot
+matplotlib
 os
 numpy
 tensorflow
 zipfile
-keras.callbacks
-keras.layers
-keras.model
+
