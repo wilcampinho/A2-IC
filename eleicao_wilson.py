@@ -159,9 +159,9 @@ def load_sidebar(data):
     params['nome_partido'] = st.sidebar.selectbox(
         label='Nome do Partido', options=nome_partidos, key='nome_partido')
 
-    cod_nacionalidade = np.unique(data['CD_NACIONALIDADE'])
-    params['cod_nacionalidade'] = st.sidebar.selectbox(
-        label='Código da nacionalidade (1 = Brasileira)', options=cod_nacionalidade, key='cod_nacionalidade')
+    #cod_nacionalidade = np.unique(data['CD_NACIONALIDADE'])
+    #params['cod_nacionalidade'] = st.sidebar.selectbox(
+        #label='Código da nacionalidade (1 = Brasileira)', options=cod_nacionalidade, key='cod_nacionalidade')
 
     max_idade_posse = data['NR_IDADE_DATA_POSSE'].max()
     params['idade_posse'] = st.sidebar.number_input(
@@ -175,17 +175,17 @@ def load_sidebar(data):
     params['escolaridade'] = st.sidebar.selectbox(
         label='Escolaridade', options=escolaridade, key='escolaridade')
 
-    estado_civil = np.unique(data['DS_ESTADO_CIVIL'])
-    params['estado_civil'] = st.sidebar.selectbox(
-        label='Estado Civil', options=estado_civil, key='estado_civil')
+    #estado_civil = np.unique(data['DS_ESTADO_CIVIL'])
+    #params['estado_civil'] = st.sidebar.selectbox(
+        #label='Estado Civil', options=estado_civil, key='estado_civil')
 
     tom_de_pele = np.unique(data['DS_COR_RACA'])
     params['tom_de_pele'] = st.sidebar.selectbox(
         label='Tom de pele', options=tom_de_pele, key='tom_de_pele')
 
-    ocupacao = np.unique(data['DS_OCUPACAO'])
-    params['ocupacao'] = st.sidebar.selectbox(
-        label='Ocupação', options=ocupacao, key='ocupacao')
+   # ocupacao = np.unique(data['DS_OCUPACAO'])
+   # params['ocupacao'] = st.sidebar.selectbox(
+     #   label='Ocupação', options=ocupacao, key='ocupacao')
 
     max_valor_receita = data['VR_RECEITA'].max()
     params['valor_receita'] = st.sidebar.slider(
